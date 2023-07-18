@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/login_page.dart';
+import 'package:medical_healthcare_app/features/medisicalApp/presentation/widgets/navbar_page.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/sing_up_page.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/test.dart';
 
@@ -24,7 +25,7 @@ class WellcomPage extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Test()));
+                        MaterialPageRoute(builder: (context) => NavbarPage()));
                   },
                   child: Text(
                     'SKIP',
