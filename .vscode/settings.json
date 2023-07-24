@@ -1,0 +1,5 @@
+{
+    "editor.formatOnSave": true,
+    "editor.snippets.codeActions.enabled": false,
+    "files.autoSave": "onFocusChange"
+}

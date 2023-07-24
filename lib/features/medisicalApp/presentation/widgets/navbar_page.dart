@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/coledar_page.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/home_page.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/messeges_page.dart';
+import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/schedule_page.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/settings_page.dart';
 
 class NavbarPage extends StatefulWidget {
@@ -16,7 +17,7 @@ class _NavbarPageState extends State<NavbarPage> {
   final _screens = [
     HomePage(),
     MessegesPage(),
-    ColedarPage(),
+    SchedulePage(),
     SettingsPage(),
   ];
   @override
