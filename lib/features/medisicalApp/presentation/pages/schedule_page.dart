@@ -10,9 +10,15 @@ class SchedulePage extends StatefulWidget {
 class _SchedulePageState extends State<SchedulePage> {
   int _buttonIndex = 0;
   final _scheduleWidgets = [
-    Container(),
-    Container(),
-    Container(),
+    Center(
+      child: Text('Upcoming'),
+    ),
+    Center(
+      child: Text('Completed'),
+    ),
+    Center(
+      child: Text('Cancled'),
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -45,12 +51,55 @@ class _SchedulePageState extends State<SchedulePage> {
                   InkWell(
                     onTap: () {},
                     child: Container(
-                      padding: EdgeInsets.symmetric(vertical: 13),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 13, horizontal: 25),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        'Upcoming',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {},
+                    child: Container(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 13, horizontal: 25),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        'Completed',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {},
+                    child: Container(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 13, horizontal: 25),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        'Canceled',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w500),
+                      ),
                     ),
                   )
                 ],
               ),
             ),
+            SizedBox(
+              height: 30,
+            ),
+            _scheduleWidgets[_buttonIndex],
           ],
         ),
       ),
