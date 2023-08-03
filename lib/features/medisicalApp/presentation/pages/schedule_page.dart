@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_healthcare_app/features/medisicalApp/presentation/widgets/Upcoming.dart';
 
 class SchedulePage extends StatefulWidget {
   const SchedulePage({Key? key}) : super(key: key);
@@ -10,9 +11,7 @@ class SchedulePage extends StatefulWidget {
 class _SchedulePageState extends State<SchedulePage> {
   int _buttonIndex = 0;
   final _scheduleWidgets = [
-    Center(
-      child: Text('Upcoming'),
-    ),
+    UpcomingWidget(),
     Center(
       child: Text('Completed'),
     ),
@@ -49,11 +48,18 @@ class _SchedulePageState extends State<SchedulePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 0;
+                      });
+                    },
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 13, horizontal: 25),
                       decoration: BoxDecoration(
+                        color: _buttonIndex == 0
+                            ? Color(0xff7165d6)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
@@ -64,11 +70,18 @@ class _SchedulePageState extends State<SchedulePage> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 1;
+                      });
+                    },
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 13, horizontal: 25),
                       decoration: BoxDecoration(
+                        color: _buttonIndex == 1
+                            ? Color(0xff7165d6)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
@@ -79,11 +92,18 @@ class _SchedulePageState extends State<SchedulePage> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 2;
+                      });
+                    },
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 13, horizontal: 25),
                       decoration: BoxDecoration(
+                        color: _buttonIndex == 2
+                            ? Color(0xff7165d6)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
