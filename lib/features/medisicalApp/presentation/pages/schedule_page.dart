@@ -55,7 +55,7 @@ class _SchedulePageState extends State<SchedulePage> {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 13, horizontal: 25),
+                          EdgeInsets.symmetric(vertical: 13, horizontal: 10),
                       decoration: BoxDecoration(
                         color: _buttonIndex == 0
                             ? Color(0xff7165d6)
@@ -77,7 +77,7 @@ class _SchedulePageState extends State<SchedulePage> {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 13, horizontal: 25),
+                          EdgeInsets.symmetric(vertical: 13, horizontal: 10),
                       decoration: BoxDecoration(
                         color: _buttonIndex == 1
                             ? Color(0xff7165d6)
@@ -99,7 +99,7 @@ class _SchedulePageState extends State<SchedulePage> {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 13, horizontal: 25),
+                          EdgeInsets.symmetric(vertical: 13, horizontal: 10),
                       decoration: BoxDecoration(
                         color: _buttonIndex == 2
                             ? Color(0xff7165d6)
