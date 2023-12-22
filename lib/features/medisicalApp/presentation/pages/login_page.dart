@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/sing_up_page.dart';
+import 'package:medical_healthcare_app/features/medisicalApp/presentation/widgets/navbar_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -72,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: InkWell(
                   onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => LoginPage()));
+                        MaterialPageRoute(builder: (context) => NavbarPage()));
                   },
                   child: Padding(
                     padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),

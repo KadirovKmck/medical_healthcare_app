@@ -55,23 +55,43 @@ class _ChatPageState extends State<ChatPage> {
               child: SizedBox(
             height: 70,
           )),
-          TextField(
-              decoration: InputDecoration(
-                  hintText: 'enter your masseges',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Colors.grey, width: 4)),
-                  labelText: 'enter your masseges',
-                  labelStyle: TextStyle(
-                    color: Colors.black,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black12, blurRadius: 10, spreadRadius: 2)
+                  ]),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 300,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 15),
+                      child: TextFormField(
+                        onChanged: (value) {
+                          setState(() {});
+                        },
+                        // controller: controller,
+                        decoration: InputDecoration(
+                            hintText: 'Enter your messeges',
+                            border: InputBorder.none),
+                      ),
+                    ),
                   ),
-                  focusColor: Colors.black,
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Colors.black),
+                  Icon(
+                    Icons.send,
+                    color: Color(0xff7165d6),
                   ),
-                  suffixIcon:
-                      IconButton(onPressed: () {}, icon: Icon(Icons.send)))),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );

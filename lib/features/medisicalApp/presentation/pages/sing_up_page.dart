@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/login_page.dart';
+import 'package:medical_healthcare_app/features/medisicalApp/presentation/widgets/navbar_page.dart';
 
 class SingUpPage extends StatefulWidget {
   const SingUpPage({Key? key}) : super(key: key);
@@ -93,8 +94,10 @@ class _SingUpPageState extends State<SingUpPage> {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => NavbarPage()));
                     },
                     child: Padding(
                       padding:

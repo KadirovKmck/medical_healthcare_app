@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:medical_healthcare_app/features/medisicalApp/presentation/pages/wellcom_page.dart';
+import 'package:medical_healthcare_app/features/medisicalApp/presentation/widgets/intstate.dart';
 
 void main(List<String> args) {
   runApp(MedicalIlnas());
@@ -12,7 +12,7 @@ class MedicalIlnas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: WellcomPage(),
+      home: InitStateWidgets(),
       debugShowCheckedModeBanner: false,
     );
   }
